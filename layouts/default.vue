@@ -1,13 +1,21 @@
 <template>
   <div>
+    <header>
+      <nuxt-link to="/about">About</nuxt-link>
+      <nuxt-link to="/contact">Contact</nuxt-link>
+      <nuxt-link to="/user">User</nuxt-link>
+    </header>
     <nuxt />
+    <footer>
+      <p>&copy; 2023 My Nuxt App</p>
+    </footer>
   </div>
 </template>
 
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+body {
+  font-family: sans-serif;
+  margin: 15%;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -15,6 +23,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  text-align: center;
 }
 
 *,
